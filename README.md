@@ -5,6 +5,6 @@ Squares is a simplified version of the game he imagined. It incorporates just fi
 
 The player is given 45 seconds to complete as many challenges as possible. He/she is rewarded with an extra 3 seconds for a correct answer, and loses 5 seconds with each incorrect response. Thus the player is encouraged to act quickly and accurately.
 
-Game design was a collaboration between Peter and myself, and all development was done by me.
+Game design was a collaboration between Peter and myself, and development was done by me.
 
 You can play the game <a href="http://alypilkons.com/Squares">here</a>.
