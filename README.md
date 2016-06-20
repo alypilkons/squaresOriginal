@@ -7,4 +7,4 @@ The player is given 45 seconds to complete as many challenges as possible. He/sh
 
 Game design was a collaboration between Peter and myself, and all development was done by me.
 
-You can play the game at: alypilkons.com/Squares
+You can play the game <a href="alypilkons.com/Squares">here</a>.
