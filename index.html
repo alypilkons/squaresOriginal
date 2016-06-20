@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Squares</title>
+        <script src="https://use.fontawesome.com/efea72e119.js"></script>
+        <link rel="stylesheet" href="reset.css" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <!-- MENU STATE -->
+        <div id="menuState">
+            <h1 id="title">Squares</h1>
+             <div id="menuSquares">
+                <div id="Msquare1" class="Msquare"></div>
+                <div id="Msquare2" class="Msquare"></div>
+                <div id="Msquare3" class="Msquare"></div>
+                <div id="Msquare4" class="Msquare"></div>
+                <div id="Msquare5" class="Msquare"></div>
+                <div id="Msquare6" class="Msquare"></div>
+            </div>
+            <div id="rulesButton1">rules</div>
+            <div class="startButton">play</div>
+        </div>
+        <div id="byLine">
+            <p>A game by Aly Pilkons <a href="https://twitter.com/alypilkons"><i class="socialMedia fa fa-twitter"></i></a> <a href="https://github.com/alypilkons"><i class="socialMedia fa fa-github" aria-hidden="true"></i></a></p>
+        </div>
+        <!-- END MENU STATE -->
+        
+        <!-- GAME PLAY STATE -->
+        <div id="gameState">
+            <div id="info">
+                <h1 id="level">Score: <span id="score">0</span></h1>
+                <h1 id="timer">Timer: <span id="seconds">45</span></h1>
+            </div>
+            <div id="prompt">
+                <div id="square1" class="square"></div>
+                <div id="square2" class="square"></div>
+                <div id="square3" class="square"></div>
+                <div id="square4" class="square"></div>
+                <div id="square5" class="square"></div>
+                <div id="square6" class="square"></div>
+            </div>
+            
+            <div id="responseBox">
+                <div id="response1" class="response"></div>
+                <div id="response2" class="response"></div>
+                <div id="response3" class="response"></div>
+                <div id="response4" class="response"></div>
+                <div id="response5" class="response"></div>
+            </div>
+            
+            <div id="creator">
+                <div id="red" class="button"></div>
+                <div id="orange" class="button"></div>
+                <div id="yellow" class="button"></div>
+                <div id="green" class="button"></div>
+                <div id="blue" class="button"></div>
+                <div id="purple" class="button"></div>
+            </div>
+            
+            <div id="settings">
+                <div id="start" class="setting">Start </div>
+                <div id="clear" class="setting">Clear</div>
+                <div id="submit" class="setting">Submit</div>
+            </div>
+        </div>
+        <!-- END GAME PLAY STATE -->
+        
+        <!-- SCORE SCREEN STATE -->
+        <div id="scoreState">
+            <h1 id="scoreTitle">Your score: <span id=currScore>0</span></h1>
+            <h2 id="prevScoreTitle">Last round: <span id="lastScore">0</span></h2>
+            <h2 id="bestScoreTitle">Best score: <span id="bestScore">0</span></h2>
+            <div id="scorePageButtons">
+                <div id="backToMenu" class="scorePageButton">Menu</div>
+                <div id="playAgain" class="scorePageButton">Play Again</div>
+            </div>
+        </div>
+        <!-- END SCORE SCREEN STATE -->
+        
+        <!-- COLOR THEORY RULES STATE -->
+        <div id="rulesPrimerState">
+             <h1 id="rulesTitle">Basic Color Theory</h1>
+            <h4>There are three <span class="bold">PRIMARY</span> colors: blue, red, and yellow.</h4>
+            <div>
+                <div id="HTsquareBlue" class="HTsquare"></div>
+                <div id="HTsquareRed" class="HTsquare"></div>
+                <div id="HTsquareYellow" class="HTsquare"></div>
+            </div>
+            <h4>There are also three <span class="bold">SECONDARY</span> colors: orange, purple, and green.</h4>
+            <div>
+                <div id="HTsquareOrange" class="HTsquare"></div>
+                <div id="HTsquarePurple" class="HTsquare"></div>
+                <div id="HTsquareGreen" class="HTsquare"></div>
+            </div>
+             <h4 class="bold">Secondary colors are created by mixing two primary colors.</h4>
+            <div>
+                <div id="HTsquareRed" class="HTsquare"></div>
+                <div id="HTsquareBlue" class="HTsquare"></div>
+                <div class="HTsquare"> <h1 class="arrow"><i class="fa fa-arrow-right"></i></h1></div>
+                <div id="HTsquarePurple" class="HTsquare"></div>
+            </div>
+            <div>
+                <div id="HTsquareBlue" class="HTsquare"></div>
+                <div id="HTsquareYellow" class="HTsquare"></div>
+                <div class="HTsquare"> <h1 class="arrow"><i class="fa fa-arrow-right"></i></h1></div>
+                <div id="HTsquareGreen" class="HTsquare"></div>
+            </div>
+            <div>
+                <div id="HTsquareYellow" class="HTsquare"></div>
+                <div id="HTsquareRed" class="HTsquare"></div>
+                <div class="HTsquare"> <h1 class="arrow"><i class="fa fa-arrow-right"></i></h1></div>
+                <div id="HTsquareOrange" class="HTsquare"></div>
+            </div>
+            <h4><span class="bold">COMPLEMENTARY</span> colors are two colors directly opposite each other on the color wheel. <span class="bold">Each pair of complementary colors is made up of one primary color and one secondary color.</span></h4>
+            <div>
+                <div id="HTsquareRed" class="HTsquare"></div>
+                <div id="HTsquareGreen" class="HTsquare"></div>
+            </div>
+            <br>
+            <div>
+                <div id="HTsquareBlue" class="HTsquare"></div>
+                <div id="HTsquareOrange" class="HTsquare"></div>
+            </div>
+            <br>
+            <div>
+                <div id="HTsquareYellow" class="HTsquare"></div>
+                <div id="HTsquarePurple" class="HTsquare"></div>
+            </div>
+            <div id="rulesPart2Button">got it!</div>
+        </div>
+        <!-- END COLOR THEORY RULES STATE -->
+        
+        <!-- FIRST PAGE OF GAMEPLAY RULES -->
+        <div id="rulesStatePart1">
+            <h1 id="rulesTitle">How To Play</h1>
+            <h4>After pressing START, two or more colored squares will appear in a line. <span class="bold">Your job is to create your own line of squares in response to that line.</span></h4>
+             <h4>For example, you might see this line of squares:</h4>
+            <div>
+                <div id="HTsquarePurple" class="HTsquare"></div>
+                <div id="HTsquareOrange" class="HTsquare"></div>
+                <div id="HTsquareGreen" class="HTsquare"></div>
+                <div id="HTsquareBlue" class="HTsquare"></div>
+                <div id="HTsquareRed" class="HTsquare"></div>
+            </div>
+            <h4>And you would respond by creating this line of squares:</h4>
+            <div>
+                <div id="HTsquareRed" class="HTsquare"></div>
+                <div id="HTsquareYellow" class="HTsquare"></div>
+                <div id="HTsquareYellow" class="HTsquare"></div>
+                <div id="HTsquarePurple" class="HTsquare"></div>
+            </div>
+            <h4>You do this by <span class="bold">combining each square with the one to its right to create a new color square, following five simple rules.</span> Hint: Use color theory!</h4>
+            <h4 class="bold">Rule 1: Two matching colors combine into one copy of the color</h4>
+            <div>
+                <div id="HTsquareBlue" class="HTsquare"></div>
+                <div id="HTsquareBlue" class="HTsquare"></div>
+                <div class="HTsquare"> <h1 class="arrow"><i class="fa fa-arrow-right"></i></h1></div>
+                <div id="HTsquareBlue" class="HTsquare"></div>
+            </div>
+            <div>
+                <div id="HTsquarePurple" class="HTsquare"></div>
+                <div id="HTsquarePurple" class="HTsquare"></div>
+                <div id="HTsquarePurple" class="HTsquare"></div>
+                <div class="HTsquare"> <h1 class="arrow"><i class="fa fa-arrow-right"></i></h1></div>
+                <div id="HTsquarePurple" class="HTsquare"></div>
+                <div id="HTsquarePurple" class="HTsquare"></div>
+            </div>
+            
+            <h4 class="bold">Rule 2: Primary colors combine to create appropriate secondary color</h4>
+            <div>
+                <div id="HTsquareRed" class="HTsquare"></div>
+                <div id="HTsquareBlue" class="HTsquare"></div>
+                <div class="HTsquare"> <h1 class="arrow"><i class="fa fa-arrow-right"></i></h1></div>
+                <div id="HTsquarePurple" class="HTsquare"></div>
+            </div>
+            <div>
+                <div id="HTsquareRed" class="HTsquare"></div>
+                <div id="HTsquareYellow" class="HTsquare"></div>
+                <div id="HTsquareBlue" class="HTsquare"></div>
+                <div class="HTsquare"> <h1 class="arrow"><i class="fa fa-arrow-right"></i></h1></div>
+                <div id="HTsquareOrange" class="HTsquare"></div>
+                <div id="HTsquareGreen" class="HTsquare"></div>
+            </div>
+            <h4><span class="bold">Rule 3: Two secondary colors combine into the primary color both need to make their color.</span> For example, purple is made from red and blue, and green is made from yellow and blue, so they both require blue.</h4>
+            <div>
+                <div id="HTsquarePurple" class="HTsquare"></div>
+                <div id="HTsquareGreen" class="HTsquare"></div>
+                <div class="HTsquare"> <h1 class="arrow"><i class="fa fa-arrow-right"></i></h1></div>
+                <div id="HTsquareBlue" class="HTsquare"></div>
+            </div>
+            <div>
+                <div id="HTsquareGreen" class="HTsquare"></div>
+                <div id="HTsquareOrange" class="HTsquare"></div>
+                <div id="HTsquarePurple" class="HTsquare"></div>
+                <div class="HTsquare"> <h1 class="arrow"><i class="fa fa-arrow-right"></i></h1></div>
+                <div id="HTsquareYellow" class="HTsquare"></div>
+                <div id="HTsquareRed" class="HTsquare"></div>
+            </div>
+            <h4><span class="bold">Rule 4: A primary and a secondary color combine into the other primary color needed to create that secondary color.</span> For example, to create orange, red needs to be mixed with yellow.</h4>
+            <div>
+                <div id="HTsquareOrange" class="HTsquare"></div>
+                <div id="HTsquareRed" class="HTsquare"></div>
+                <div class="HTsquare"> <h1 class="arrow"><i class="fa fa-arrow-right"></i></h1></div>
+                <div id="HTsquareYellow" class="HTsquare"></div>
+            </div>
+            <div>
+                <div id="HTsquareGreen" class="HTsquare"></div>
+                <div id="HTsquareYellow" class="HTsquare"></div>
+                <div id="HTsquareOrange" class="HTsquare"></div>
+                <div class="HTsquare"> <h1 class="arrow"><i class="fa fa-arrow-right"></i></h1></div>
+                <div id="HTsquareBlue" class="HTsquare"></div>
+                <div id="HTsquareRed" class="HTsquare"></div>
+            </div>
+            <h4><span class="bold">Rule 5: If there are any complementary colors in the line, skip them altogether and move onto the next pair of squares!</span></h4>
+            <div>
+                <div id="HTsquareOrange" class="HTsquare"></div>
+                <div id="HTsquareBlue" class="HTsquare"></div>
+                <div class="HTsquare"> <h1 class="arrow"><i class="fa fa-arrow-right"></i></h1></div>
+                <div class="HTsquare HTsquareHidden"></div>
+            </div>
+            <div>
+                <div id="HTsquareGreen" class="HTsquare"></div>
+                <div id="HTsquareRed" class="HTsquare"></div>
+                <div id="HTsquareYellow" class="HTsquare"></div>
+                <div id="HTsquarePurple" class="HTsquare"></div>
+                <div class="HTsquare"> <h1 class="arrow"><i class="fa fa-arrow-right"></i></h1></div>
+                <div id="HTsquareOrange" class="HTsquare"></div>
+                <div class="HTsquare HTsquareHidden"></div>
+                <div class="HTsquare HTsquareHidden"></div>
+            </div>
+            <h4>Whew, that was a lot to take in! Let's practice a bit on the next screen.</h4>
+              <div>
+                     <div id="backButton">back</div>
+                    <div id="rulesPart3Button">continue</div>
+                </div>
+        </div>
+        <!-- END FIRST PAGE OF GAMEPLAY RULES -->
+        
+        <!-- SECOND PAGE OF GAMEPLAY RULES -->
+        <div id="rulesStatePart2">
+            <h1 id="rulesTitle">How To Play, continued</h1>
+                <h4>Remember that example from the last screen? How do you go from this...</h4>
+               <div>
+                <div id="HTsquarePurple" class="HTsquare"></div>
+                <div id="HTsquareOrange" class="HTsquare"></div>
+                <div id="HTsquareGreen" class="HTsquare"></div>
+                <div id="HTsquareBlue" class="HTsquare"></div>
+                <div id="HTsquareRed" class="HTsquare"></div>
+            </div>
+            <h4>...to this?</h4>
+            <div>
+                <div id="HTsquareRed" class="HTsquare"></div>
+                <div id="HTsquareYellow" class="HTsquare"></div>
+                <div id="HTsquareYellow" class="HTsquare"></div>
+                <div id="HTsquarePurple" class="HTsquare"></div>
+            </div>
+            <h4>Let's work through it step by step. <span class="bold">You start with the purple square on the left, and the orange square next to it.</span> Purple and orange are both secondary colors, and they both need red to make them. So the first square in your response is red!</h4>
+            <div>
+                <div id="HTsquarePurple" class="HTsquare"></div>
+                <div id="HTsquareOrange" class="HTsquare"></div>
+                <div class="HTsquare"> <h1 class="arrow"><i class="fa fa-arrow-right"></i></h1></div>
+                <div id="HTsquareRed" class="HTsquare"></div>
+            </div>
+             <div>
+                 <h4><span class="bold">Next you move on to the orange square and the green one next to it.</span> They're both secondary colors too! Which primary color do they both need to make their colors? Yellow! So you add yellow to your line.</h4>
+                <div>
+                <div id="HTsquareOrange" class="HTsquare"></div>
+                <div id="HTsquareGreen" class="HTsquare"></div>
+                <div class="HTsquare"> <h1 class="arrow"><i class="fa fa-arrow-right"></i></h1></div>
+                <div id="HTsquareYellow" class="HTsquare"></div>
+                </div>
+            </div>
+            <div>
+                <h4><span class="bold">Next up is green and blue.</span> Green is secondary, but blue is a primary color. What other color needs to be mixed with blue to make green? Yellow! So another yellow square is added to the line.</h4>
+                <div>
+                <div id="HTsquareGreen" class="HTsquare"></div>
+                <div id="HTsquareBlue" class="HTsquare"></div>
+                <div class="HTsquare"> <h1 class="arrow"><i class="fa fa-arrow-right"></i></h1></div>
+                <div id="HTsquareYellow" class="HTsquare"></div>
+                </div>
+            </div>
+               <div>
+                 <h4><span class="bold">The final two squares in the line are blue and red, both primary colors.</span> Mixing them gives us purple, so the last square in our line is purple! And we're done!</h4>
+                <div>
+                <div id="HTsquareBlue" class="HTsquare"></div>
+                <div id="HTsquareRed" class="HTsquare"></div>
+                <div class="HTsquare"> <h1 class="arrow"><i class="fa fa-arrow-right"></i></h1></div>
+                <div id="HTsquarePurple" class="HTsquare"></div>
+                </div>
+            </div>
+            <h4>Ready to give it a try? <span class="bold">You'll be given 45 seconds to complete as many challenges as possible.</span> For each one you get correct, you'll be rewarded with 3 extra seconds, but be careful because if you submit incorrectly you'll lose an extra 5 seconds!</h4>
+            <div id="backButton2">back</div>
+            <div id="startButton2">menu</div>
+        </div>
+        <!-- END SECOND PAGE OF GAMEPLAY RULES -->
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> 
+     <script type="text/javascript" src="script.js"></script>   
+    </body>
+</html>

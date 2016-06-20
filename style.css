@@ -1,0 +1,371 @@
+#menuState {
+    display: block;
+    background-color: antiquewhite;
+    height: 450px;
+    width: 620px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#title {
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 80px;
+    padding-top: 30px;
+    color: #333;
+}
+
+#rulesButton1, .startButton, #backButton, #rulesPart2Button, #rulesPart3Button, #startButton2, #backButton2 {
+    display: inline-block;
+    background-color: lightgray;
+    color: #333;
+    margin: 20px;
+    margin-top: 60px;
+    text-align: center;
+    line-height: 50px;
+    height: 60px;
+    width: 180px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 35px;
+    border: 3px solid #333;
+}
+
+#rulesButton1, .startButton {
+    margin-left: 60px;
+    margin-top: 110px;
+}
+
+.startButton:hover, #startButton2:hover, #rulesPart2Button:hover, #rulesButton1:hover, #rulesPart3Button:hover, #backButton:hover, #backButton2:hover {
+    cursor: pointer;
+    border: 3px solid green;
+}
+
+#menuSquares {
+    height: 100px;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.Msquare {
+    height: 80px;
+    width: 80px;
+    background-color: gray;
+    display: inline-block;
+    margin-top: 70px;
+    margin-left: 7px;
+    border-radius: 8px;  
+    -webkit-transition: transform 2s;
+    transition: transform 2s;
+}
+
+.Msquare:hover{
+    cursor:pointer;
+    -webkit-transform: rotate(180deg);
++    transform: rotate(180deg);
+}
+
+#Msquare1, #HTsquareRed {
+    background-color: red;
+}
+
+#Msquare2, #orange, #HTsquareOrange {
+    background-color: orange;
+}
+
+#Msquare3, #yellow, #HTsquareYellow {
+    background-color: yellow;
+}
+
+#Msquare4, #green, #HTsquareGreen {
+    background-color: green;
+}
+
+#Msquare5, #blue, #HTsquareBlue{
+    background-color: blue;
+}
+
+#Msquare6, #purple, #HTsquarePurple {
+    background-color: purple;
+}
+
+#gameState {
+    display: none;
+    height: 700px;
+    width: 600px;
+    margin: 45px auto;
+    border: 3px solid #333;
+    background-color: #faf0e6;
+}
+
+#info {
+    height: 80px;
+    width: 570px;
+    margin: auto;
+}
+
+#level {
+    margin-left: 20px;
+    color: #333;
+    display: inline-block;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#timer {
+    font-family: Helvetica;
+    font-size: 22px;
+    display: inline-block;
+    margin-left: 300px;
+    color: #333;
+    margin-top: 20px;
+}
+
+#prompt {
+    height: 100px;
+    width: 550px;
+    margin: 0 auto;
+    border-bottom: 3px solid #333;
+}
+
+.square {
+    height: 80px;
+    width: 80px;
+    background-color: gray;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 7px;
+    display: none;
+    border-radius: 8px;  
+}
+
+#responseBox {
+    height: 200px;
+    width: 580px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.response {
+    height: 105px;
+    width: 105px;
+    background-color: gray;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 6px;
+    display: none;
+    border-radius: 8px;
+}
+
+#creator {
+    height: 140px;
+    width: 560px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #F2E5D8;
+}
+
+.button {
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    border-radius: 40px;
+    margin-left: 1px;
+    margin-top: 30px;
+    border: 2px solid #333;
+}
+
+.button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#red {
+    margin-left: 15px;
+    background-color: red;
+}
+
+#settings {
+    height: 100px;
+    width: 570px;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.setting {
+    display: inline-block;
+    height: 45px;
+    width: 120px;
+    background-color: gray;
+    margin-top: 50px;
+    margin-left: 45px; 
+    border-radius: 10px;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center; 
+    border: 3px solid #333;
+    font-family: Helvetica;
+}
+
+.setting:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.beforeGame:hover {
+    border: 10px solid yellow;
+}
+
+#clear {
+    background-color: beige;
+}
+
+#submit {
+    background-color: #C2EDB4;
+}
+
+#start {
+    background-color: #FA8C8C;
+}
+
+#byLine {
+    margin-top: 30px;
+    font-family: Helvetica;
+    color: gray;
+    text-align: center;
+}
+
+.socialMedia {
+    color: gray;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+i:active {
+    color: green;
+}
+
+i:visited {
+    color: gray;
+}
+
+#scoreState {
+    display: none;
+    text-align: center;
+    font-family: Helvetica;
+    width: 500px;
+    height: 340px;
+    background-color: #faf0e6;
+    margin: auto;
+    margin-top: 80px;
+}
+
+#scoreTitle {
+    font-size: 50px;
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+#prevScoreTitle, #bestScoreTitle {
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+#bestScoreTitle {
+    margin-top: 20px;
+}
+
+.scorePageButton {
+    height: 30px;
+    width: 100px;
+    background-color: gray;
+    display: inline-block;
+    padding: 5px;
+    line-height: 30px;
+    vertical-align: middle;
+    margin: 40px;
+    border-radius: 10px;
+    border: 2px solid #333;
+    background-color: #F2E5D8;
+}
+
+.scorePageButton:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#rulesStatePart1, #rulesStatePart2, #rulesPrimerState {
+    display: none;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 18px;
+    background-color: antiquewhite;
+    width: 700px;
+    margin: auto
+}
+
+#rulesStatePart1 {
+    height: 2450px; 
+}
+
+#rulesStatePart2 {
+    height: 1560px;
+}
+
+#rulesPrimerState {
+    height: 1400px;
+}
+
+#rulesTitle {
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+.HTsquare {
+    height: 80px;
+    width: 80px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    font-size: 40px;
+}
+
+.HTsquareHidden {
+    background-color: antiquewhite;
+}
+
+#startButton2 {
+    margin-top: 60px;
+}
+
+#rulesPart2Button {
+    margin-top: 50px;
+}
+
+#gotIt {
+    margin-top: 60px;
+}
+
+h4 {
+    margin: 30px 20px 15px 20px;
+    text-align: justify;
+}
+
+.bold {
+    font-weight: bold;align-items: 
+}
